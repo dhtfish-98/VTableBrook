@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  equivalence:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: 0x7ff/vtable
+          ref: 7ffffff929983e3cc4c8155e66fd954acbb1008e
+          path: _reference
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: make
+      - run: python3 checks/vtablebrook_structure.py --reference _reference/vtable.c
+      - run: python3 checks/vtablebrook_equivalence.py --reference _reference/vtable.c
+      - run: make install DESTDIR="$RUNNER_TEMP/consumer" PREFIX=/usr/local

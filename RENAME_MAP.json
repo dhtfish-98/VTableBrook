@@ -1,0 +1,1095 @@
+{
+  "project": "VTableBrook",
+  "source_commit": "7ffffff929983e3cc4c8155e66fd954acbb1008e",
+  "definitions": [
+    {
+      "identity": "0x7f4fda000",
+      "kind": "FunctionDecl",
+      "old": "extract32",
+      "new": "vtb_read_unsigned_field",
+      "location": {
+        "offset": 1241,
+        "file": "vtable.c",
+        "line": 34,
+        "col": 1,
+        "tokLen": 9
+      }
+    },
+    {
+      "identity": "0x7f4fd5db8",
+      "kind": "ParmVarDecl",
+      "old": "value",
+      "new": "vtb_binding_002",
+      "location": {
+        "offset": 1260,
+        "line": 34,
+        "col": 20,
+        "tokLen": 5
+      }
+    },
+    {
+      "identity": "0x7f4fd5e38",
+      "kind": "ParmVarDecl",
+      "old": "start",
+      "new": "vtb_binding_003",
+      "location": {
+        "offset": 1276,
+        "col": 36,
+        "tokLen": 5
+      }
+    },
+    {
+      "identity": "0x7f4fd5eb8",
+      "kind": "ParmVarDecl",
+      "old": "length",
+      "new": "vtb_binding_004",
+      "location": {
+        "offset": 1292,
+        "col": 52,
+        "tokLen": 6
+      }
+    },
+    {
+      "identity": "0x7f4fda430",
+      "kind": "FunctionDecl",
+      "old": "rotr32",
+      "new": "vtb_rotate_word",
+      "location": {
+        "offset": 1380,
+        "line": 39,
+        "col": 1,
+        "tokLen": 6
+      }
+    },
+    {
+      "identity": "0x7f4fda2d8",
+      "kind": "ParmVarDecl",
+      "old": "a",
+      "new": "vtb_binding_006",
+      "location": {
+        "offset": 1396,
+        "line": 39,
+        "col": 17,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4fda358",
+      "kind": "ParmVarDecl",
+      "old": "b",
+      "new": "vtb_binding_007",
+      "location": {
+        "offset": 1408,
+        "col": 29,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4fda950",
+      "kind": "FunctionDecl",
+      "old": "sextract64",
+      "new": "vtb_read_signed_field",
+      "location": {
+        "offset": 1477,
+        "line": 44,
+        "col": 1,
+        "tokLen": 10
+      }
+    },
+    {
+      "identity": "0x7f4fda718",
+      "kind": "ParmVarDecl",
+      "old": "value",
+      "new": "vtb_binding_009",
+      "location": {
+        "offset": 1497,
+        "line": 44,
+        "col": 21,
+        "tokLen": 5
+      }
+    },
+    {
+      "identity": "0x7f4fda798",
+      "kind": "ParmVarDecl",
+      "old": "start",
+      "new": "vtb_binding_010",
+      "location": {
+        "offset": 1513,
+        "col": 37,
+        "tokLen": 5
+      }
+    },
+    {
+      "identity": "0x7f4fda818",
+      "kind": "ParmVarDecl",
+      "old": "length",
+      "new": "vtb_binding_011",
+      "location": {
+        "offset": 1529,
+        "col": 53,
+        "tokLen": 6
+      }
+    },
+    {
+      "identity": "0x7f4fdb028",
+      "kind": "FunctionDecl",
+      "old": "find_segment",
+      "new": "vtb_locate_region",
+      "location": {
+        "offset": 1665,
+        "line": 49,
+        "col": 1,
+        "tokLen": 12
+      }
+    },
+    {
+      "identity": "0x7f4fdade8",
+      "kind": "ParmVarDecl",
+      "old": "mhp",
+      "new": "vtb_binding_013",
+      "location": {
+        "offset": 1707,
+        "line": 49,
+        "col": 43,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fdae68",
+      "kind": "ParmVarDecl",
+      "old": "seg_name",
+      "new": "vtb_binding_014",
+      "location": {
+        "offset": 1724,
+        "col": 60,
+        "tokLen": 8
+      }
+    },
+    {
+      "identity": "0x7f4fdb108",
+      "kind": "VarDecl",
+      "old": "sgp",
+      "new": "vtb_binding_015",
+      "location": {
+        "offset": 1770,
+        "col": 35,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fdb3d8",
+      "kind": "VarDecl",
+      "old": "i",
+      "new": "vtb_binding_016",
+      "location": {
+        "offset": 1854,
+        "col": 11,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4fdc000",
+      "kind": "FunctionDecl",
+      "old": "find_section_type",
+      "new": "vtb_locate_section_kind",
+      "location": {
+        "offset": 2134,
+        "line": 63,
+        "col": 1,
+        "tokLen": 17
+      }
+    },
+    {
+      "identity": "0x7f4fdbd30",
+      "kind": "ParmVarDecl",
+      "old": "sgp",
+      "new": "vtb_binding_018",
+      "location": {
+        "offset": 2185,
+        "line": 63,
+        "col": 52,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fdbda8",
+      "kind": "ParmVarDecl",
+      "old": "type",
+      "new": "vtb_binding_019",
+      "location": {
+        "offset": 2198,
+        "col": 65,
+        "tokLen": 4
+      }
+    },
+    {
+      "identity": "0x7f4fdc0e0",
+      "kind": "VarDecl",
+      "old": "sp",
+      "new": "vtb_binding_020",
+      "location": {
+        "offset": 2232,
+        "col": 27,
+        "tokLen": 2
+      }
+    },
+    {
+      "identity": "0x7f4fdc3c8",
+      "kind": "VarDecl",
+      "old": "i",
+      "new": "vtb_binding_021",
+      "location": {
+        "offset": 2307,
+        "col": 11,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4fdcaf8",
+      "kind": "FunctionDecl",
+      "old": "find_section_name",
+      "new": "vtb_locate_section_label",
+      "location": {
+        "offset": 2470,
+        "line": 77,
+        "col": 1,
+        "tokLen": 17
+      }
+    },
+    {
+      "identity": "0x7f4fdc948",
+      "kind": "ParmVarDecl",
+      "old": "sgp",
+      "new": "vtb_binding_023",
+      "location": {
+        "offset": 2521,
+        "line": 77,
+        "col": 52,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fdc9c8",
+      "kind": "ParmVarDecl",
+      "old": "sect_name",
+      "new": "vtb_binding_024",
+      "location": {
+        "offset": 2538,
+        "col": 69,
+        "tokLen": 9
+      }
+    },
+    {
+      "identity": "0x7f4fdcbd8",
+      "kind": "VarDecl",
+      "old": "sp",
+      "new": "vtb_binding_025",
+      "location": {
+        "offset": 2577,
+        "col": 27,
+        "tokLen": 2
+      }
+    },
+    {
+      "identity": "0x7f4fdce18",
+      "kind": "VarDecl",
+      "old": "i",
+      "new": "vtb_binding_026",
+      "location": {
+        "offset": 2652,
+        "col": 11,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4fdd928",
+      "kind": "FunctionDecl",
+      "old": "find_section_type_from_seg",
+      "new": "vtb_region_section_kind",
+      "location": {
+        "offset": 2896,
+        "line": 91,
+        "col": 1,
+        "tokLen": 26
+      }
+    },
+    {
+      "identity": "0x7f4fdd6d8",
+      "kind": "ParmVarDecl",
+      "old": "mhp",
+      "new": "vtb_binding_028",
+      "location": {
+        "offset": 2952,
+        "line": 91,
+        "col": 57,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fdd758",
+      "kind": "ParmVarDecl",
+      "old": "seg_name",
+      "new": "vtb_binding_029",
+      "location": {
+        "offset": 2969,
+        "col": 74,
+        "tokLen": 8
+      }
+    },
+    {
+      "identity": "0x7f4fdd7d0",
+      "kind": "ParmVarDecl",
+      "old": "type",
+      "new": "vtb_binding_030",
+      "location": {
+        "offset": 2987,
+        "col": 92,
+        "tokLen": 4
+      }
+    },
+    {
+      "identity": "0x7f4fdda10",
+      "kind": "VarDecl",
+      "old": "sgp",
+      "new": "vtb_binding_031",
+      "location": {
+        "offset": 3029,
+        "col": 35,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fde158",
+      "kind": "FunctionDecl",
+      "old": "find_section_name_from_seg",
+      "new": "vtb_region_section_label",
+      "location": {
+        "offset": 3171,
+        "line": 101,
+        "col": 1,
+        "tokLen": 26
+      }
+    },
+    {
+      "identity": "0x7f4fddeb0",
+      "kind": "ParmVarDecl",
+      "old": "mhp",
+      "new": "vtb_binding_033",
+      "location": {
+        "offset": 3227,
+        "line": 101,
+        "col": 57,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fddf30",
+      "kind": "ParmVarDecl",
+      "old": "seg_name",
+      "new": "vtb_binding_034",
+      "location": {
+        "offset": 3244,
+        "col": 74,
+        "tokLen": 8
+      }
+    },
+    {
+      "identity": "0x7f4fde000",
+      "kind": "ParmVarDecl",
+      "old": "sect_name",
+      "new": "vtb_binding_035",
+      "location": {
+        "offset": 3266,
+        "col": 96,
+        "tokLen": 9
+      }
+    },
+    {
+      "identity": "0x7f4fde240",
+      "kind": "VarDecl",
+      "old": "sgp",
+      "new": "vtb_binding_036",
+      "location": {
+        "offset": 3313,
+        "col": 35,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fde8b0",
+      "kind": "FunctionDecl",
+      "old": "find_osmetaclass",
+      "new": "vtb_discover_metaclass",
+      "location": {
+        "offset": 3443,
+        "line": 111,
+        "col": 1,
+        "tokLen": 16
+      }
+    },
+    {
+      "identity": "0x7f4fde680",
+      "kind": "ParmVarDecl",
+      "old": "mhp",
+      "new": "vtb_binding_038",
+      "location": {
+        "offset": 3489,
+        "line": 111,
+        "col": 47,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4fde6f8",
+      "kind": "ParmVarDecl",
+      "old": "slide",
+      "new": "vtb_binding_039",
+      "location": {
+        "offset": 3503,
+        "col": 61,
+        "tokLen": 5
+      }
+    },
+    {
+      "identity": "0x7f4fde770",
+      "kind": "ParmVarDecl",
+      "old": "sec_text_end",
+      "new": "vtb_binding_040",
+      "location": {
+        "offset": 3519,
+        "col": 77,
+        "tokLen": 12
+      }
+    },
+    {
+      "identity": "0x7f4fde998",
+      "kind": "VarDecl",
+      "old": "sec_mod_init_func",
+      "new": "vtb_binding_041",
+      "location": {
+        "offset": 3561,
+        "col": 27,
+        "tokLen": 17
+      }
+    },
+    {
+      "identity": "0x7f4fdea98",
+      "kind": "VarDecl",
+      "old": "mod_init_func_table",
+      "new": "vtb_binding_042",
+      "location": {
+        "offset": 3597,
+        "col": 18,
+        "tokLen": 19
+      }
+    },
+    {
+      "identity": "0x7f4fdeb68",
+      "kind": "VarDecl",
+      "old": "insn",
+      "new": "vtb_binding_043",
+      "location": {
+        "offset": 3635,
+        "col": 18,
+        "tokLen": 4
+      }
+    },
+    {
+      "identity": "0x7f4fdebf8",
+      "kind": "VarDecl",
+      "old": "i",
+      "new": "vtb_binding_044",
+      "location": {
+        "offset": 3651,
+        "col": 11,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4fdec70",
+      "kind": "VarDecl",
+      "old": "osmetaclass_ptr",
+      "new": "vtb_binding_045",
+      "location": {
+        "offset": 3654,
+        "col": 14,
+        "tokLen": 15
+      }
+    },
+    {
+      "identity": "0x7f4800240",
+      "kind": "FunctionDecl",
+      "old": "do_metaclass_alloc",
+      "new": "vtb_inspect_allocation",
+      "location": {
+        "offset": 4229,
+        "line": 131,
+        "col": 1,
+        "tokLen": 18
+      }
+    },
+    {
+      "identity": "0x7f4fdff40",
+      "kind": "ParmVarDecl",
+      "old": "mhp",
+      "new": "vtb_binding_047",
+      "location": {
+        "offset": 4277,
+        "line": 131,
+        "col": 49,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4800000",
+      "kind": "ParmVarDecl",
+      "old": "ptr",
+      "new": "vtb_binding_048",
+      "location": {
+        "offset": 4291,
+        "col": 63,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4800078",
+      "kind": "ParmVarDecl",
+      "old": "slide",
+      "new": "vtb_binding_049",
+      "location": {
+        "offset": 4305,
+        "col": 77,
+        "tokLen": 5
+      }
+    },
+    {
+      "identity": "0x7f48000f0",
+      "kind": "ParmVarDecl",
+      "old": "sec_text_end",
+      "new": "vtb_binding_050",
+      "location": {
+        "offset": 4321,
+        "col": 93,
+        "tokLen": 12
+      }
+    },
+    {
+      "identity": "0x7f4800320",
+      "kind": "VarDecl",
+      "old": "insn",
+      "new": "vtb_binding_051",
+      "location": {
+        "offset": 4354,
+        "col": 18,
+        "tokLen": 4
+      }
+    },
+    {
+      "identity": "0x7f48003b0",
+      "kind": "VarDecl",
+      "old": "i",
+      "new": "vtb_binding_052",
+      "location": {
+        "offset": 4370,
+        "col": 11,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f48004e0",
+      "kind": "VarDecl",
+      "old": "x",
+      "new": "vtb_binding_053",
+      "location": {
+        "offset": 4373,
+        "col": 14,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4803b20",
+      "kind": "FunctionDecl",
+      "old": "do_kmod_init",
+      "new": "vtb_inspect_initializer",
+      "location": {
+        "offset": 5058,
+        "line": 155,
+        "col": 1,
+        "tokLen": 12
+      }
+    },
+    {
+      "identity": "0x7f4803590",
+      "kind": "ParmVarDecl",
+      "old": "mhp",
+      "new": "vtb_binding_055",
+      "location": {
+        "offset": 5100,
+        "line": 155,
+        "col": 43,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4803608",
+      "kind": "ParmVarDecl",
+      "old": "len",
+      "new": "vtb_binding_056",
+      "location": {
+        "offset": 5114,
+        "col": 57,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4803680",
+      "kind": "ParmVarDecl",
+      "old": "ptr",
+      "new": "vtb_binding_057",
+      "location": {
+        "offset": 5128,
+        "col": 71,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f48036f8",
+      "kind": "ParmVarDecl",
+      "old": "slide",
+      "new": "vtb_binding_058",
+      "location": {
+        "offset": 5142,
+        "col": 85,
+        "tokLen": 5
+      }
+    },
+    {
+      "identity": "0x7f4803770",
+      "kind": "ParmVarDecl",
+      "old": "cstring_start",
+      "new": "vtb_binding_059",
+      "location": {
+        "offset": 5158,
+        "col": 101,
+        "tokLen": 13
+      }
+    },
+    {
+      "identity": "0x7f48037e8",
+      "kind": "ParmVarDecl",
+      "old": "cstring_end",
+      "new": "vtb_binding_060",
+      "location": {
+        "offset": 5182,
+        "col": 125,
+        "tokLen": 11
+      }
+    },
+    {
+      "identity": "0x7f4803860",
+      "kind": "ParmVarDecl",
+      "old": "sec_text_start",
+      "new": "vtb_binding_061",
+      "location": {
+        "offset": 5204,
+        "col": 147,
+        "tokLen": 14
+      }
+    },
+    {
+      "identity": "0x7f48038d8",
+      "kind": "ParmVarDecl",
+      "old": "sec_text_end",
+      "new": "vtb_binding_062",
+      "location": {
+        "offset": 5229,
+        "col": 172,
+        "tokLen": 12
+      }
+    },
+    {
+      "identity": "0x7f4803950",
+      "kind": "ParmVarDecl",
+      "old": "osmetaclass",
+      "new": "vtb_binding_063",
+      "location": {
+        "offset": 5252,
+        "col": 195,
+        "tokLen": 11
+      }
+    },
+    {
+      "identity": "0x7f4803c28",
+      "kind": "VarDecl",
+      "old": "metaclass_table",
+      "new": "vtb_binding_064",
+      "location": {
+        "offset": 5284,
+        "col": 18,
+        "tokLen": 15
+      }
+    },
+    {
+      "identity": "0x7f4803cc0",
+      "kind": "VarDecl",
+      "old": "insn",
+      "new": "vtb_binding_065",
+      "location": {
+        "offset": 5318,
+        "col": 18,
+        "tokLen": 4
+      }
+    },
+    {
+      "identity": "0x7f4803d50",
+      "kind": "VarDecl",
+      "old": "i",
+      "new": "vtb_binding_066",
+      "location": {
+        "offset": 5334,
+        "col": 11,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4803dc8",
+      "kind": "VarDecl",
+      "old": "off",
+      "new": "vtb_binding_067",
+      "location": {
+        "offset": 5337,
+        "col": 14,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4803e40",
+      "kind": "VarDecl",
+      "old": "addr",
+      "new": "vtb_binding_068",
+      "location": {
+        "offset": 5342,
+        "col": 19,
+        "tokLen": 4
+      }
+    },
+    {
+      "identity": "0x7f4803f08",
+      "kind": "VarDecl",
+      "old": "x",
+      "new": "vtb_binding_069",
+      "location": {
+        "offset": 5348,
+        "col": 25,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f48040c0",
+      "kind": "VarDecl",
+      "old": "found",
+      "new": "vtb_binding_070",
+      "location": {
+        "offset": 5369,
+        "col": 7,
+        "tokLen": 5
+      }
+    },
+    {
+      "identity": "0x7f4807ef0",
+      "kind": "FunctionDecl",
+      "old": "vtable",
+      "new": "vtb_review_image",
+      "location": {
+        "offset": 6537,
+        "line": 193,
+        "col": 1,
+        "tokLen": 6
+      }
+    },
+    {
+      "identity": "0x7f4807d60",
+      "kind": "ParmVarDecl",
+      "old": "mhp",
+      "new": "vtb_binding_072",
+      "location": {
+        "offset": 6573,
+        "line": 193,
+        "col": 37,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4807dd8",
+      "kind": "ParmVarDecl",
+      "old": "len",
+      "new": "vtb_binding_073",
+      "location": {
+        "offset": 6587,
+        "col": 51,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f4808000",
+      "kind": "VarDecl",
+      "old": "sec_text",
+      "new": "vtb_binding_074",
+      "location": {
+        "offset": 6620,
+        "col": 27,
+        "tokLen": 8
+      }
+    },
+    {
+      "identity": "0x7f4808090",
+      "kind": "VarDecl",
+      "old": "sec_cstring",
+      "new": "vtb_binding_075",
+      "location": {
+        "offset": 6631,
+        "col": 38,
+        "tokLen": 11
+      }
+    },
+    {
+      "identity": "0x7f4808120",
+      "kind": "VarDecl",
+      "old": "sec_kmod_init",
+      "new": "vtb_binding_076",
+      "location": {
+        "offset": 6645,
+        "col": 52,
+        "tokLen": 13
+      }
+    },
+    {
+      "identity": "0x7f48081e8",
+      "kind": "VarDecl",
+      "old": "seg_text",
+      "new": "vtb_binding_077",
+      "location": {
+        "offset": 6694,
+        "col": 35,
+        "tokLen": 8
+      }
+    },
+    {
+      "identity": "0x7f4808280",
+      "kind": "VarDecl",
+      "old": "func_table",
+      "new": "vtb_binding_078",
+      "location": {
+        "offset": 6721,
+        "col": 18,
+        "tokLen": 10
+      }
+    },
+    {
+      "identity": "0x7f4808310",
+      "kind": "VarDecl",
+      "old": "i",
+      "new": "vtb_binding_079",
+      "location": {
+        "offset": 6743,
+        "col": 11,
+        "tokLen": 1
+      }
+    },
+    {
+      "identity": "0x7f4808388",
+      "kind": "VarDecl",
+      "old": "cstring_end",
+      "new": "vtb_binding_080",
+      "location": {
+        "offset": 6746,
+        "col": 14,
+        "tokLen": 11
+      }
+    },
+    {
+      "identity": "0x7f4808400",
+      "kind": "VarDecl",
+      "old": "sec_text_end",
+      "new": "vtb_binding_081",
+      "location": {
+        "offset": 6759,
+        "col": 27,
+        "tokLen": 12
+      }
+    },
+    {
+      "identity": "0x7f4808478",
+      "kind": "VarDecl",
+      "old": "osmetaclass",
+      "new": "vtb_binding_082",
+      "location": {
+        "offset": 6773,
+        "col": 41,
+        "tokLen": 11
+      }
+    },
+    {
+      "identity": "0x7f4809b20",
+      "kind": "ParmVarDecl",
+      "old": "argc",
+      "new": "vtb_binding_083",
+      "location": {
+        "offset": 7586,
+        "line": 217,
+        "col": 10,
+        "tokLen": 4
+      }
+    },
+    {
+      "identity": "0x7f4809ba0",
+      "kind": "ParmVarDecl",
+      "old": "argv",
+      "new": "vtb_binding_084",
+      "location": {
+        "offset": 7599,
+        "col": 23,
+        "tokLen": 4
+      }
+    },
+    {
+      "identity": "0x7f4809f98",
+      "kind": "VarDecl",
+      "old": "fd",
+      "new": "vtb_binding_085",
+      "location": {
+        "offset": 7681,
+        "col": 7,
+        "tokLen": 2
+      }
+    },
+    {
+      "identity": "0x7f480a198",
+      "kind": "VarDecl",
+      "old": "len",
+      "new": "vtb_binding_086",
+      "location": {
+        "offset": 7720,
+        "col": 10,
+        "tokLen": 3
+      }
+    },
+    {
+      "identity": "0x7f480a448",
+      "kind": "VarDecl",
+      "old": "mhp",
+      "new": "vtb_binding_087",
+      "location": {
+        "offset": 7783,
+        "col": 26,
+        "tokLen": 3
+      }
+    }
+  ],
+  "macro_names": {
+    "OSMETACLASS_IDX": "VTB_RULE_01",
+    "METACLASS_ALLOC_IDX": "VTB_RULE_02",
+    "IS_IN_RANGE": "VTB_RULE_03",
+    "UNTAG_PTR": "VTB_RULE_04",
+    "RD": "VTB_RULE_05",
+    "RM": "VTB_RULE_06",
+    "RN": "VTB_RULE_07",
+    "IS_BL": "VTB_RULE_08",
+    "BL_IMM": "VTB_RULE_09",
+    "IS_ADRP": "VTB_RULE_10",
+    "ADRP_IMM": "VTB_RULE_11",
+    "ADRP_ADDR": "VTB_RULE_12",
+    "IS_ADD_X": "VTB_RULE_13",
+    "ADD_X_IMM": "VTB_RULE_14",
+    "IS_STR_X": "VTB_RULE_15",
+    "IS_MOV_X": "VTB_RULE_16",
+    "IS_ORR_W": "VTB_RULE_17",
+    "IMMR": "VTB_RULE_18",
+    "ORR_W_IMM": "VTB_RULE_19",
+    "IS_MOV_W_ZHW": "VTB_RULE_20",
+    "MOV_W_IMM": "VTB_RULE_21",
+    "IS_RET": "VTB_RULE_22"
+  },
+  "macro_parameters": [
+    {
+      "a": "vtb_macro_value_1",
+      "b": "vtb_macro_value_2",
+      "c": "vtb_macro_value_3"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    },
+    {
+      "a": "vtb_macro_value_1"
+    }
+  ],
+  "token_replacements": 497,
+  "source_file_mapping": {
+    "vtable.c": [
+      "Sources/vtb_image_layout.h",
+      "Sources/vtb_container_walk.c",
+      "Sources/vtb_class_walk.c",
+      "Sources/vtb_pipeline.c",
+      "Sources/vtb_bootstrap.c"
+    ]
+  },
+  "compatibility_exceptions": [
+    "main",
+    "C standard/system APIs",
+    "Mach-O external layout fields",
+    "format strings and segment/section names",
+    "Makefile and license metadata"
+  ],
+  "reference_source_sha256": "c11a111f00914ba496b356ea87e6e4c1120b7b9eaa313d92abbe45476c664085"
+}
