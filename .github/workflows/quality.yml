@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 jobs:
-  equivalence:
+  bounded-analysis:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,6 +20,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: make
-      - run: python3 checks/vtablebrook_structure.py --reference _reference/vtable.c
-      - run: python3 checks/vtablebrook_equivalence.py --reference _reference/vtable.c
-      - run: make install DESTDIR="$RUNNER_TEMP/consumer" PREFIX=/usr/local
+      - run: python3 checks/vtablebrook_safety.py --reference _reference/vtable.c --output "$RUNNER_TEMP/vtablebrook-current.json"

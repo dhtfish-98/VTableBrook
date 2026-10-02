@@ -1,3 +1,4 @@
+# Historical v1.0.0 verification. See vtablebrook_safety.py for the current rewrite.
 """Compare executable Clang AST bodies after undoing implementation renames."""
 from pathlib import Path
 import argparse

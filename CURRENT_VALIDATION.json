@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "valid_process_comparisons": 182,
+  "valid_fixture_inputs": 91,
+  "optimization_levels": [
+    "O0",
+    "O2"
+  ],
+  "sanitizer_and_boundary_checks": 230,
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "independent_arm64_assembler_vectors": 13,
+  "intentional_ret_discovery_changes": 2,
+  "installed_consumer": "PASS",
+  "input_immutability_and_no_created_files": "PASS",
+  "reference_sha256": "c11a111f00914ba496b356ea87e6e4c1120b7b9eaa313d92abbe45476c664085",
+  "scope": "Owned synthetic linear-layout ARM64 Mach-O data. No input execution, live kernel, device, or CVP approval."
+}

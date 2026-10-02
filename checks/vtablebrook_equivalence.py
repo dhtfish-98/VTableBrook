@@ -1,3 +1,4 @@
+# Historical v1.0.0 verification. See vtablebrook_safety.py for the current rewrite.
 """Compare a modular derivative with a pinned upstream source on owned fixtures."""
 from pathlib import Path
 import argparse
