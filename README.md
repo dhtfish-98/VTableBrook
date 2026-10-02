@@ -1,5 +1,7 @@
 # VTableBrook
 
+防御用途、实际能力及本轮验证范围见 [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md)。
+
 VTableBrook inspects class and virtual-table metadata in compatible ARM64 Mach-O kernel images. It is a renamed and modular derivative of the source recorded in [ORIGIN.md](ORIGIN.md).
 
 ## Build and use
