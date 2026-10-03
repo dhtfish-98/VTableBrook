@@ -1,8 +1,10 @@
+> 目录已整理：文档在「项目文档」，构建、缓存与暂存输入在「Build」。从仓库根目录运行 `python3 构建.py --build`；如需使用本文原有源码命令，先运行 `python3 构建.py --stage --ci`，再进入 `Build/源码`。暂存会恢复原输入路径。现有版本和历史验证记录按各自提交理解。
+
 # VTableBrook
 
 VTableBrook performs offline, static class and virtual-table pattern analysis on compatible little-endian ARM64 Mach-O kernel files that you own or are authorized to inspect. The runtime reads one local file and prints a report; it does not run kernel instructions, contact a network, edit the input or create analysis files.
 
-The 2026-10-02 implementation rewrites all four C translation units and their shared header around a bounded image context. Analysis still derives from the attributed upstream project in [ORIGIN.md](ORIGIN.md); original GPL notices remain. Defensive use and CVP evidence boundaries are in [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md).
+The 2026-10-02 implementation rewrites all four C translation units and their shared header around a bounded image context. Analysis still derives from the attributed upstream project in [ORIGIN.md](<ORIGIN.md>); original GPL notices remain. Defensive use and CVP evidence boundaries are in [DEFENSIVE_SCOPE.md](<DEFENSIVE_SCOPE.md>).
 
 ## Build and use
 
@@ -28,13 +30,13 @@ Limits are 8,192 load commands, 65,536 section descriptors, 65,536 initializer e
 
 ## Reproduce current verification
 
-Check out the pinned upstream commit in [ORIGIN.md](ORIGIN.md) outside this tree, then run:
+Check out the pinned upstream commit in [ORIGIN.md](<ORIGIN.md>) outside this tree, then run:
 
 ```sh
 make
 python3 checks/vtablebrook_safety.py --reference /path/to/upstream/vtable.c
 ```
 
-This gate checks normal output against the pinned source at O0/O2, malformed input under address/undefined-behavior sanitizers, independently assembled ARM64 operands, unchanged input, no analysis-created files and an installed consumer outside the source tree. See [VALIDATION.md](VALIDATION.md) for finite evidence and intentional behavior changes.
+This gate checks normal output against the pinned source at O0/O2, malformed input under address/undefined-behavior sanitizers, independently assembled ARM64 operands, unchanged input, no analysis-created files and an installed consumer outside the source tree. See [VALIDATION.md](<VALIDATION.md>) for finite evidence and intentional behavior changes.
 
 Current source release v1.0.1 contains source only. The old v1.0.0 executable remains historical and does not include this rewrite.

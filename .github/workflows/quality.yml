@@ -9,15 +9,39 @@ permissions:
 jobs:
   bounded-analysis:
     runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}/Build/源码
+    env:
+      TMPDIR: ${{ github.workspace }}/Build/临时
+      TMP: ${{ github.workspace }}/Build/临时
+      TEMP: ${{ github.workspace }}/Build/临时
+      PYTHONPYCACHEPREFIX: ${{ github.workspace }}/Build/缓存/python
+      PIP_CACHE_DIR: ${{ github.workspace }}/Build/缓存/pip
+      npm_config_cache: ${{ github.workspace }}/Build/缓存/npm
+      RUFF_CACHE_DIR: ${{ github.workspace }}/Build/缓存/ruff
+      GOCACHE: ${{ github.workspace }}/Build/缓存/go
+      GOMODCACHE: ${{ github.workspace }}/Build/缓存/go-mod
+      GOTMPDIR: ${{ github.workspace }}/Build/临时
+      GOPATH: ${{ github.workspace }}/Build/缓存/go-path
+      GOBIN: ${{ github.workspace }}/Build/输出/go-bin
+      CARGO_HOME: ${{ github.workspace }}/Build/缓存/cargo
+      XDG_CACHE_HOME: ${{ github.workspace }}/Build/缓存/xdg
+      CCACHE_DIR: ${{ github.workspace }}/Build/缓存/ccache
+      SCCACHE_DIR: ${{ github.workspace }}/Build/缓存/sccache
+      NODE_COMPILE_CACHE: ${{ github.workspace }}/Build/缓存/node
     steps:
       - uses: actions/checkout@v4
+      - name: Stage source and restored project inputs under Build
+        run: ${{ runner.os == 'Windows' && 'python' || 'python3' }} 构建.py --stage --ci
+        working-directory: ${{ github.workspace }}
       - uses: actions/checkout@v4
         with:
           repository: 0x7ff/vtable
           ref: 7ffffff929983e3cc4c8155e66fd954acbb1008e
-          path: _reference
+          path: 'Build/源码/_reference'
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: make
-      - run: python3 checks/vtablebrook_safety.py --reference _reference/vtable.c --output "$RUNNER_TEMP/vtablebrook-current.json"
+      - run: 'python3 checks/vtablebrook_safety.py --reference _reference/vtable.c --output "$TMPDIR/vtablebrook-current.json"'

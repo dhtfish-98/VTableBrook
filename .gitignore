@@ -2,3 +2,10 @@ vtablebrook
 *.o
 .DS_Store
 __pycache__/
+
+# All generated build outputs and staging are local.
+!/Build/
+/Build/*
+!/Build/.gitignore
+__pycache__/
+*.py[cod]
