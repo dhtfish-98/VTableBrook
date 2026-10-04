@@ -22,6 +22,6 @@
 
 ## 来源与 CVP
 
-上游固定提交、许可及 Codex 辅助维护归属见 [ORIGIN.md](ORIGIN.md)。全部运行时文件重写也不代表申请人独立创造了上游分析思路。
+上游固定提交、许可及后续维护记录见 [ORIGIN.md](ORIGIN.md)。全部运行时文件重写也不代表申请人独立创造了上游分析思路。
 
 [Anthropic 当前 CVP 说明](https://support.claude.com/en/articles/14604842-real-time-cyber-safeguards-on-claude-opus-and-sonnet)依据受到防护影响的合法防御双用途任务。项目数量、改名、构建和 CI 不能证明申请资格；实际授权、受限任务、身份、组织和产品渠道仍需真实证据。本仓库没有申请批准结果，也不保证特定模型永不触发防护。
