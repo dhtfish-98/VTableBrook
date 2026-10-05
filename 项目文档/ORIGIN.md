@@ -8,4 +8,7 @@ On 2026-10-02, all four runtime C files and their shared header were rewritten i
 
 ARM64 immediate semantics were checked against primary LLVM documentation/source, including [AArch64 addressing-mode helpers](https://github.com/llvm/llvm-project/blob/main/llvm/lib/Target/AArch64/MCTargetDesc/AArch64AddressingModes.h). The current decoder uses its own per-bit mask construction; it does not copy LLVM implementation code. Test operands are independently assembled by Clang and are never executed.
 
-The historical v1.0.0 source/binary release is retained. The current v1.0.1 source release corresponds to the bounded rewrite and makes no updated-binary or live-device claim.
+The historical v1.0.0 source/binary release is retained. The v1.0.1 source
+release contains the bounded rewrite. The current v1.0.2 source release adds
+the centralized documentation and Build staging layout without changing the
+runtime. Neither source release makes an updated-binary or live-device claim.

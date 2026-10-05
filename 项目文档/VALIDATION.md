@@ -1,4 +1,4 @@
-# Validation — current bounded rewrite (2026-10-02)
+# Validation — bounded rewrite retained in v1.0.2
 
 The current gate is `checks/vtablebrook_safety.py`, reproduced by GitHub CI against the pinned upstream source. Local results are in [CURRENT_VALIDATION.json](CURRENT_VALIDATION.json).
 
@@ -23,4 +23,8 @@ Before this rewrite, 194 comparisons on 97 inputs and 13 normalized function AST
 
 Evidence covers owned synthetic, linear-layout ARM64 Mach-O files and finite malformed inputs. It does not prove arbitrary-input safety, class-discovery completeness, every ARM64 instruction or kernel release, real-device behavior, or CVP eligibility/approval. The analyzer is a straight-line pattern heuristic; it does not model all control flow or clobbering by unknown instructions and function calls. Printed addresses and sizes are candidate interpretations.
 
-The input loader avoids memory-mapped truncation faults and checks descriptor metadata and complete reads. This is not a guaranteed coherent snapshot of data concurrently modified by another writer. v1.0.1 distributes current source only; the old v1.0.0 packaged executable is historical.
+The input loader avoids memory-mapped truncation faults and checks descriptor
+metadata and complete reads. This is not a guaranteed coherent snapshot of
+data concurrently modified by another writer. v1.0.1 and v1.0.2 distribute
+source only; the old v1.0.0 packaged executable is historical. The current
+source release changes packaging layout and documentation, not runtime code.

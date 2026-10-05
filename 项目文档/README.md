@@ -39,4 +39,6 @@ python3 checks/vtablebrook_safety.py --reference /path/to/upstream/vtable.c
 
 This gate checks normal output against the pinned source at O0/O2, malformed input under address/undefined-behavior sanitizers, independently assembled ARM64 operands, unchanged input, no analysis-created files and an installed consumer outside the source tree. See [VALIDATION.md](<VALIDATION.md>) for finite evidence and intentional behavior changes.
 
-Current source release v1.0.1 contains source only. The old v1.0.0 executable remains historical and does not include this rewrite.
+Current source release v1.0.2 contains source only. The v1.0.1 source release
+contains the same bounded runtime, while the old v1.0.0 executable remains
+historical and does not include this rewrite.
